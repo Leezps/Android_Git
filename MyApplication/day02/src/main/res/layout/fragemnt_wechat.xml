@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/teach_fragemnt_wechat_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--
+        SeekBar 拖动进度条
+        默认进度对打值100 可以手动修改
+    -->
+
+    <SeekBar
+        android:id="@+id/teach_fragment_seekbar"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="200"/>
+
+    <EditText
+        android:id="@+id/teach_fragment_wechat_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入你的银行密码"
+        android:textColorHint="#f0f000"
+        android:textColor="#0000ff"
+        android:inputType="numberPassword"
+        android:maxLength="5"/>
+
+    <RatingBar
+        android:id="@+id/teach_fragment_wechat_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

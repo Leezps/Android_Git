@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+        相对布局
+            相对关系
+                相对于父控件
+                    layout_centerInParent 在父控件的中心
+                    layout_alignParentBottom 在父控件的底部
+                    layout_alignParentRight 在父控件的右边
+                相对于同级控件
+
+                盒子模型
+                margin: 外边距
+                padding: 内边距
+
+                visibility:
+                        visible:可见性
+                        invisible:不可见，占位
+                        gone:不可见，不占位
+
+    -->
+
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:background="#00ff00"/>
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#0000ff"
+        android:layout_toRightOf="@id/one"/>
+
+    <TextView
+        android:id="@+id/three"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#ff0000"
+        android:layout_below="@id/one"
+        android:layout_alignLeft="@id/one"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#f0f000"
+        android:layout_below="@id/three"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

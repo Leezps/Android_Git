@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.leezp.android.myapplication_1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="蔡文姬"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textScaleX="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textView2"
+        app:layout_constraintVertical_bias="0.502" />
+    <!--
+        control + /生成注释
+        alt + enter 万能键 修复 相当于Eclipse中的 control+l
+
+        android:text 文字
+        android:textColor RGB,ARGB A alpha 透明度
+        A R G B 都是一个0-255的16进制 00-ff
+        颜色开头使用#
+
+        android:textSize 单位推荐使用 sp
+
+        LinearLayout 线性布局，比较重要的一个属性 方向
+        orientation 默认值 横向 horizontal
+                           纵向 vertical
+    -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="断肠泪"
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textScaleX="4"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="酒"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="无懈可击"
+            android:textColor="#00ff00"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="过河拆桥"
+            android:textColor="#0000ff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

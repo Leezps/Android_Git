@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.leezp.android.day02.SecondActivity">
+
+    <FrameLayout
+        android:id="@+id/teach_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/teach_controller"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/teach_second_wechat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/controller_wechat"
+            android:gravity="center"
+            android:text="微信"
+            android:textColor="@drawable/controller_text_color"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/teach_second_mail_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="通讯录"
+            android:textSize="12sp"
+            android:textColor="@drawable/controller_text_color"
+            android:drawableTop="@drawable/controller_mail_list"/>
+
+        <RadioButton
+            android:id="@+id/teach_second_find"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="发现"
+            android:textSize="12sp"
+            android:textColor="@drawable/controller_text_color"
+            android:drawableTop="@drawable/controller_find"/>
+
+        <RadioButton
+            android:id="@+id/teach_second_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我的"
+            android:textSize="12sp"
+            android:textColor="@drawable/controller_text_color"
+            android:drawableTop="@drawable/controller_mine"/>
+
+    </RadioGroup>
+
+</LinearLayout>

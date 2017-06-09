@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.leezp.android.day02.MainActivity">
+
+    <!--
+        control + alt + l 代码格式化
+        control + / 代码注释
+    -->
+
+    <Button
+        android:id="@+id/teach_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登陆"/>
+
+    <CheckBox
+        android:id="@+id/teach_ball"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="篮球"/>
+
+    <CheckBox
+        android:id="@+id/teach_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOL"/>
+
+    <!--
+        RadioButton 单选按钮 必须在RadioGroup中才生效
+    -->
+
+    <RadioGroup
+        android:id="@+id/teach_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/teach_man"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="男"/>
+
+        <RadioButton
+            android:id="@+id/teach_women"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="女"/>
+
+    </RadioGroup>
+
+</LinearLayout>
