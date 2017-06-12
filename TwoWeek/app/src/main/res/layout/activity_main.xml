@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leezp.android.twoweek.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/activity_main_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <Button
+            android:id="@+id/activity_main_translation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="平移X"/>
+
+        <Button
+            android:id="@+id/activity_main_translation_xy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="平移XY"/>
+
+        <Button
+            android:id="@+id/activity_main_rotate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="旋转"/>
+
+        <Button
+            android:id="@+id/activity_main_scale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="缩放"/>
+
+        <Button
+            android:id="@+id/activity_main_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="渐变"/>
+
+        <Button
+            android:id="@+id/activity_main_animationSet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="动画集合"/>
+
+        <Button
+            android:id="@+id/activity_main_translationX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="translationX"/>
+
+        <Button
+            android:id="@+id/activity_main_property"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="属性动画"/>
+
+    </LinearLayout>
+
+</ScrollView>
