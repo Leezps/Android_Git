@@ -1,7 +1,5 @@
 package com.leezp.android.viewpagerindicator;
 
-import android.graphics.Color;
-import android.os.Build;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;

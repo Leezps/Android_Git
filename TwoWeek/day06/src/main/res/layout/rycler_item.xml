@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@color/colorBlack">
+
+    <ImageView
+        android:id="@+id/recycler_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/recycler_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="10dp"
+        android:text="最近不能玩了"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/coclorWhite"/>
+
+    <TextView
+        android:id="@+id/recycler_item_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="工作 / 1'3''"
+        android:textSize="12sp"
+        android:textColor="@color/coclorWhite"/>
+
+</FrameLayout>
