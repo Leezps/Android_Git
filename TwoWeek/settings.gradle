@@ -1,1 +1,1 @@
-include ':app', ':viewpagerindicator', ':day06'
+include ':app', ':viewpagerindicator', ':day06', ':day07'

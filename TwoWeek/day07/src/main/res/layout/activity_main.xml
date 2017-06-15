@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leezp.android.day07.MainActivity">
+
+    <!--
+        VideoView的控制器默认在它的父布局的底部
+    -->
+
+    <FrameLayout
+        android:id="@+id/activity_main_video_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_height"
+        android:background="@color/colorBlack">
+
+        <VideoView
+            android:id="@+id/activity_main_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/activity_main_play"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:background="@drawable/play_selector"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    android:id="@+id/activity_main_current_time"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/colorWhite"/>
+
+                <SeekBar
+                    android:id="@+id/activity_main_pregress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/activity_main_total_time"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/colorWhite"/>
+
+                <CheckBox
+                    android:id="@+id/activity_main_full_screen"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:button="@null"
+                    android:background="@drawable/screen_selector"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
